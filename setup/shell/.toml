@@ -16,9 +16,10 @@ command = 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh
 name = "brew"
 installer = "bash"
 check = "brew --version"
-command = '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && eval "$(/opt/homebrew/bin/brew shellenv)"'
+command = './scripts/install-brew.sh'
 # require_elevated_access = true
 require_interactive = true
+ignore_errors = true
 
 [[dependency]]
 name = "bat"
