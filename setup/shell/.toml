@@ -6,8 +6,6 @@ original_author_user = "darylcecile"
 name = "Move zen config to its place"
 command = "mkdir -p ~/.config && cp -r zen.toml ~/.config/zen.toml"
 
-[[setup-script]]
-
 [[dependency]]
 name = "bat"
 installer = "brew"
