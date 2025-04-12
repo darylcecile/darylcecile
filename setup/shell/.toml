@@ -1,12 +1,16 @@
 [config]
 manifest_version = "0.0.1"
-overrides = [
-	{ file = "zen.toml", to = "~/.config/zen.toml" }
-]
+
+[[setup-script]]
+name = "Move zen config to its place"
+command = "mkdir -p ~/.config && cp -r zen.toml ~/.config/zen.toml"
+
+[[setup-script]]
 
 [[dependency]]
 name = "bat"
 installer = "brew"
+check = "bat --version"
 
 [[dependency]]
 name = "oven-sh/bun/bun"
@@ -25,3 +29,5 @@ installer = "brew"
 [[dependency]]
 name = "gh"
 installer = "brew"
+check = "gh --version"
+

@@ -1,0 +1,12 @@
+# This is the root config which sets up all the configs in this repo
+
+[config]
+manifest_version = "0.0.1"
+
+[[setup-script]]
+name = "Setup VSCode Settings"
+command = "sprout setup darylcecile -f ide/vscode"
+
+[[setup-script]]
+name = "Setup oh-my-posh config"
+command = "sprout setup darylcecile -f shell"
