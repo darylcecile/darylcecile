@@ -7,26 +7,33 @@ name = "Move zen config to its place"
 command = "mkdir -p ~/.config && cp -r zen.toml ~/.config/zen.toml"
 
 [[dependency]]
+name = "brew"
+installer = "bash"
+check = "brew --version"
+command = 'curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh'
+
+[[dependency]]
 name = "bat"
 installer = "brew"
 check = "bat --version"
 
-# [[dependency]]
-# name = "oven-sh/bun/bun"
-# installer = "brew"
-# check = "bun --version"
+[[dependency]]
+name = "oven-sh/bun/bun"
+installer = "brew"
+check = "bun --version"
 
-# [[dependency]]
-# name = "powerlevel10k"
-# installer = "brew"
-# check = "p10k --version"
+[[dependency]]
+name = "powerlevel10k"
+installer = "brew"
+check = "p10k --version"
 
-# [[dependency]]
-# name = "jandedobbeleer/oh-my-posh/oh-my-posh"
-# installer = "brew"
+[[dependency]]
+name = "jandedobbeleer/oh-my-posh/oh-my-posh"
+description = "On my posh"
+installer = "brew"
 
-# [[dependency]]
-# name = "gh"
-# installer = "brew"
-# check = "gh --version"
+[[dependency]]
+name = "gh"
+installer = "brew"
+check = "gh --version"
 
