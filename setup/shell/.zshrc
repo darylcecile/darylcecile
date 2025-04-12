@@ -182,8 +182,3 @@ fi
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Go
-export GOPROXY="https://goproxy.githubapp.com/mod,https://proxy.golang.org/,direct"
-export GOPRIVATE="github.com/github/*"
-export GONOPROXY=""
-export GONOSUMDB="github.com/github/*"
