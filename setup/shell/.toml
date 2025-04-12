@@ -17,7 +17,8 @@ name = "brew"
 installer = "bash"
 check = "brew --version"
 command = '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && eval "$(/opt/homebrew/bin/brew shellenv)"'
-require_elevated_access = true
+# require_elevated_access = true
+require_interactive = true
 
 [[dependency]]
 name = "bat"
