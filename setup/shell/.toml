@@ -11,6 +11,7 @@ name = "brew"
 installer = "bash"
 check = "brew --version"
 command = '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+require_elevated_access = true
 
 [[dependency]]
 name = "bat"
