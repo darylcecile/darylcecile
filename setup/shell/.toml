@@ -11,22 +11,22 @@ name = "bat"
 installer = "brew"
 check = "bat --version"
 
-[[dependency]]
-name = "oven-sh/bun/bun"
-installer = "brew"
-check = "bun --version"
+# [[dependency]]
+# name = "oven-sh/bun/bun"
+# installer = "brew"
+# check = "bun --version"
 
-[[dependency]]
-name = "powerlevel10k"
-installer = "brew"
-check = "p10k --version"
+# [[dependency]]
+# name = "powerlevel10k"
+# installer = "brew"
+# check = "p10k --version"
 
-[[dependency]]
-name = "jandedobbeleer/oh-my-posh/oh-my-posh"
-installer = "brew"
+# [[dependency]]
+# name = "jandedobbeleer/oh-my-posh/oh-my-posh"
+# installer = "brew"
 
-[[dependency]]
-name = "gh"
-installer = "brew"
-check = "gh --version"
+# [[dependency]]
+# name = "gh"
+# installer = "brew"
+# check = "gh --version"
 
