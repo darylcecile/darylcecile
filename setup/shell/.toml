@@ -7,6 +7,12 @@ name = "Move zen config to its place"
 command = "mkdir -p ~/.config && cp -r zen.toml ~/.config/zen.toml"
 
 [[dependency]]
+name = "oh-my-zsh"
+installer = "bash"
+check = "omz version"
+command = 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
+
+[[dependency]]
 name = "brew"
 installer = "bash"
 check = "brew --version"
