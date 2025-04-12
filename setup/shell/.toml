@@ -10,7 +10,7 @@ command = "mkdir -p ~/.config && cp -r zen.toml ~/.config/zen.toml"
 name = "brew"
 installer = "bash"
 check = "brew --version"
-command = 'curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh'
+command = '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
 
 [[dependency]]
 name = "bat"
