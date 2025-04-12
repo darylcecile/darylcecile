@@ -1,0 +1,27 @@
+[config]
+manifest_version = "0.0.1"
+overrides = [
+	{ file = "zen.toml", to = "~/.config/zen.toml" }
+]
+
+[[dependency]]
+name = "bat"
+installer = "brew"
+
+[[dependency]]
+name = "oven-sh/bun/bun"
+installer = "brew"
+check = "bun --version"
+
+[[dependency]]
+name = "powerlevel10k"
+installer = "brew"
+check = "p10k --version"
+
+[[dependency]]
+name = "jandedobbeleer/oh-my-posh/oh-my-posh"
+installer = "brew"
+
+[[dependency]]
+name = "gh"
+installer = "brew"
