@@ -9,7 +9,7 @@ command = "mkdir -p ~/.config && cp -r zen.toml ~/.config/zen.toml"
 [[dependency]]
 name = "oh-my-zsh"
 installer = "bash"
-check = "[[ ! -d $HOME/.oh-my-zsh ]]"
+check = "[[ -d $HOME/.oh-my-zsh ]] && { echo 'Error: oh-my-zsh is already installed.'; }"
 command = 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 
 [[dependency]]
