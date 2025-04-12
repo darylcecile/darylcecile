@@ -1,5 +1,6 @@
 [config]
 manifest_version = "0.0.1"
+original_author_user = "darylcecile"
 
 [[setup-script]]
 name = "Move zen config to its place"
