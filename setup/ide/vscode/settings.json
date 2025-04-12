@@ -73,7 +73,6 @@
 	"editor.fontLigatures": true,
 	"editor.fontFamily": "'JetBrains Mono', 'MesloLGS NF', 'Fira Code', Monaco, 'Courier New', monospace",
 	"terminal.integrated.fontLigatures.enabled": false,
-	"git.branchPrefix": "darylcecile/",
 	"workbench.colorTheme": "Catppuccin Latte",
 	"workbench.preferredLightColorTheme": "Catppuccin Latte",
 	"window.systemColorTheme": "auto",
