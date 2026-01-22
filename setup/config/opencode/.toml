@@ -1,0 +1,19 @@
+[config]
+manifest_version = "0.0.1"
+original_author_user = "darylcecile"
+
+[[dependency]]
+name = "brew"
+installer = "bash"
+check = "brew --version"
+command = '../../shell/scripts/install-brew.sh'
+# require_elevated_access = true
+require_interactive = true
+ignore_errors = true
+
+[[dependency]]
+name = "anomalyco/tap/opencode"
+description = "Opencode TUI"
+installer = "brew"
+check = "opencode --version"
+
