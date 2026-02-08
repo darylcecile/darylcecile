@@ -1,6 +1,11 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "autoupdate": true,
+  "tui": {
+		"scroll_acceleration": {
+			"enabled": true
+		}
+	},
   "compaction": {
     "auto": true,
     "prune": true
